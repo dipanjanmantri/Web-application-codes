@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<script>
+	function f1()
+	{
+		var quant_score = localStorage.getItem("quant_score");
+		var reading_score = localStorage.getItem("reading_score");
+		var video_score = localStorage.getItem("video_score");
+		document.getElementById("score1").innerHTML=quant_score;
+		document.getElementById("score2").innerHTML=reading_score;
+		document.getElementById("score3").innerHTML=video_score;
+		document.getElementById("1score").innerHTML=(parseInt(quant_score)*50);
+		document.getElementById("2score").innerHTML=(parseInt(reading_score)*50);
+		document.getElementById("3score").innerHTML=(parseInt(video_score)*50);
+		localStorage.removeItem("quant_score");
+		localStorage.removeItem("reading_score");
+		localStorage.removeItem("video_score");
+		
+	}
+</script>
+<body onload="f1()">
+<form>
+<div style="width:4500px;height:450px;border:1px solid #000;" >
+<details>
+  <summary>Quantitative Aptitude</summary>
+  <p> Number of questions : 2</p>
+  <p> Number of correct answers : <span id="score1"></span></p>
+  <p> Score : <span id="1score"></span></p>
+  
+</details>
+<details>
+  <summary>Critical Reading</summary>
+  <p> Number of questions : 1</p>
+  <p> Number of correct answers : <span id="score2"></span></p>
+  <p> Score : <span id="2score"></span></p>
+  
+</details>
+<details>
+  <summary>Audio/Video Section</summary>
+  <p> Number of questions : 1</p>
+  <p> Number of correct answers : <span id="score3"></span></p>
+  <p> Score : <span id="3score"></span></p>
+  
+</details>
+</div>
+<h3>Thank You !!!</h3>
+<input type="submit" value="Done" >
+</form>
+</body>
+</html>

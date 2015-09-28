@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            window.addEventListener("offline", function(){
+               alert("Network got disconnected"); 
+            });
+            window.addEventListener("online",function(){
+               alert("Network got connected"); 
+            });
+        </script>
+    </head>
+    <body>
+        <div style="margin-bottom: 40px;background-color: black;color: white">
+        <h2 style="font-style: oblique;text-align: center">CmpE-280 Fall-15 Assignment3</h2>
+        </div>
+        
+        <div style="padding: 20px;margin-left: auto;margin-right: auto;width: 250px;height: 250px;background-color: blue;color: white;font-style: italic;overflow: auto;font-size: 200%">
+            This Assignment is to develop a simple HTML driver page that displays user friendly messages upon disconnect & connect events.
+        </div>
+        
+    </body>
+</html>

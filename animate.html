@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-1.11.3.js">
+            
+        </script>
+        <script>
+            $(document).ready(function(){
+               $("#btn1").click(function(){
+                 $("#div1").animate({left: '100px'});
+               });
+               $("#btn2").click(function(){
+                   $("#div2").animate({left: '500px',width:'400px',height:'400px',opacity:'0.5'});
+               });
+               $("#btn3").click(function(){
+                   $("#div2").animate({height:'toggle'});
+                   $("#div1").animate({width:'toggle'});
+               });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="div1" style="background-color: cyan;width: 100px;height: 100px;position: relative">
+            
+        </div>
+        <br>
+        <br>
+        <div id="div2" style="background-color: blue;width: 100px;height: 100px;border: 1px solid blue">
+            
+        </div>
+        <br>
+        <br>
+        <button id="btn1">
+            click here to perform animation
+        </button>
+        <br>
+        <br>
+        <button id="btn2">
+          click here to perform multiple functionalities   
+        </button>
+        <br>
+        <br>
+        <button type="button" id="btn3">click to toggle</button>
+    </body>
+</html>

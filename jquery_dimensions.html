@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-1.11.3.js">
+            
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                   var txt="";
+                   txt+="width of the divi :"+$("div").width()+"<br>"+" height of the division :"+$("div").height()
+                   +"<br>"+"inner-height :"+$("div").innerHeight()+"<br>"+"inner-width :"+$("div").innerWidth()
+                   +"<br>"+"Outer-width :"+$("div").outerWidth(true)+"<br>"+"outer-height :"+$("div").outerHeight(true);
+                   $("div").html(txt);
+                   
+                });
+            });
+        </script>
+    <style>
+        .test{
+            width: 200px;
+            height: 200px;
+            background-color: cyan;
+            font-size: 100%;
+            font-weight: bold;
+            border: 2px solid;
+            padding: 20px;
+            margin: 20px;
+            
+        }
+    </style>
+    </head>
+    <body>
+        <div class="test">
+            
+        </div>
+        <br>
+        <br>
+        <button type="button">
+            click here
+        </button>
+    </body>
+</html>

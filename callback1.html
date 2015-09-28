@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-1.11.3.js">
+            
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                   $("p.test").hide("slow",function(){
+                       alert("the para has been hidden");
+                   }) ;
+                   
+                });
+                $("#btn2").click(function(){
+                  $("p.test1").hide(4000);
+                       alert("the test1 element will be hidden after the alert will be executed");  
+                });
+                
+            });
+        </script>
+    </head>
+    <body>
+        <button id="btn1" type="button">
+            click here
+        </button>
+        <button id="btn2">2nd button</button>
+        <br>
+        <br>
+        <p class="test">this is cool</p>
+        <p class="test1">this is awesome</p>
+            
+    </body>
+</html>

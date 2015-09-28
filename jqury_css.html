@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-1.11.3.js">
+            
+        </script>
+        <script>
+            $(document).ready(function(){
+               $("#btn1").click(function(){
+                   alert("the color of the 1st para is "+$("#02").css("color"));
+               }) ;
+               $("#btn2").click(function(){
+                   $(".test").css("color":"blue","font-size:200%");
+               });
+            });
+        </script>
+    </head>
+    <body>
+        <p id="01" style="color: red">this is cool</p>
+        <p id="02" style="color: blue">this is great</p>
+        <p class="test">this is the 3rd para</p>
+        <p id="04">this is the 4th para</p>
+        <button type="button" id="btn1">click to return the color of the 1st para</button>
+        <button type="button" id="btn2">click to set the color</button>
+        
+    </body>
+</html>

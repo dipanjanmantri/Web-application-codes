@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function f1()
+            {
+            var quant = localStorage.getItem("quant");
+	    if(document.getElementById("option1").checked)
+            quant=parseInt(quant)+1;
+	   
+	    localStorage.setItem("quant", quant);
+            }
+        </script>
+    </head>
+    <body>
+        <h2 style="text-align: center;font-style: italic;margin-bottom: 60px">Question 2</h2>
+        <p style="font-size: 120%"><b>Select the cosine theorem formula :</b></p>
+        <form action="q3.html" method="get">
+            <input type="radio" name="question2" id="option1" value="1">
+             <math>
+             <mi>
+             cos(&#945;
+             </mi>
+             <mo>&PlusMinus;</mo>
+             <mi>&#946;)</mi>
+             <mo>=</mo>
+             <mi>cos&#945</mi>
+             <mi>cos&#946</mi>
+             <mo>&MinusPlus;</mo>
+             <mi>sin&#945sin&#946</mi>
+             
+             </math>
+             <br>
+             <br>
+            <input type="radio" name="question2" id="option2" value="2">
+            <math>
+             <mi>sin(&#945;</mi>
+             <mo>&PlusMinus;</mo>
+             <mi>&#946;)</mi>
+             <mo>=</mo>
+             <mi>sin&#945;</mi>
+             <mi>cos&#946;</mi>
+             <mo>&MinusPlus;</mo>
+             <mi>cos&#945;</mo>
+             <mi>sin&#946;</mi>
+            
+            </math>
+            <br>
+            <br>
+            
+            <input type="radio" name="question2" id="option3" value="3">
+            <math>
+             <mi>sin(&#945;</mi>
+             <mo>&PlusMinus;</mo>
+             <mi>&#946;)</mi>
+             <mo>=</mo>
+             <mi>cos&#945;</mi>
+             <mi>cos&#946;</mi>
+             <mo>&MinusPlus;</mo>
+             <mi>cos&#945;</mo>
+             <mi>cos&#946;</mi>
+            
+            </math>
+            <br>
+            <br>
+            <math>
+                
+            </math>
+            <input type="radio" name="question2" id="option4" value="4">
+            <math>
+             <mi>sin(&#945;</mi>
+             <mo>&MinusPlus;</mo>
+             <mi>&#946;)</mi>
+             <mo>=</mo>
+             <mi>cos&#945;</mi>
+             <mi>cos&#946;</mi>
+             <mo>&MinusPlus;</mo>
+             <mi>cos&#945;</mo>
+             <mi>cos&#946;</mi> 
+            </math>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="proceed" onclick="f1()">
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <input type="reset" value="cancel">
+        </form>
+    </body>
+</html>

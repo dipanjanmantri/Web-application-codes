@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-1.11.3.js">
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("div").siblings("p").css({"color":"brown","font-family":"Verdana"})
+            });
+        </script>
+        <style>
+            .test *{
+                display: block;
+                border: 2px solid;
+                padding: 10px;
+                margin: 10px;
+                color: blue;
+            }
+            .test1{
+                font-size: xx-large;
+            }
+        </style>
+            
+    </head>
+    <body>
+        <div class="test">
+            <div style="width: 400px;height: 400px">
+                <h1 style="font-weight: bold">first heading</h1>
+                <h2>2nd heading</h2>
+                <p>this is the first para</p>
+                <p class="test1">this is the 2nd para</p>
+            </div>
+        </div>
+    </body>
+</html>

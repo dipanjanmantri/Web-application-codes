@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-1.11.3.js">
+            
+        </script>
+        
+        <script>
+            $(document).ready(function(){
+             $("button").click(function(){
+                 $("p:first").hide();
+                 $("ul li:first-child").hide();
+                 $("[href]").hide();
+                 $("a[target!='_blank']").hide();
+                 $(":button").hide();
+             })  ;     
+        
+            });
+            $(document).ready(function(){
+               $("tr:even").css("background-color","blue") 
+            });
+        </script>
+        
+    </head>
+    <body>
+        <h1>this is cool</h1>
+        <h2>this is awesome</h2>
+        <h3>this is great</h3>
+        <h4>this is sweet</h4>
+        <p>obsession with speed</p>
+        <p>obsession with variation</p>
+        <p>consuming knowledge at an acceleration rate</p>
+        <p>obsession with tricks</p>
+        <button type="button">click</button><br><br>
+        <button type="button">click1</button><br><br>
+        <button type="button">click2</button><br><br>
+        <button type="button">click3</button><br><br>
+        <a href="https://www.google.com" target="_blank">Google</a><br><br>
+        <a href="https://www.facebook.com">Facebook</a><br><br>
+        <p>first coffee</p>   
+        <ul>
+            <li>costa coffee</li>
+            <li>ccd</li>
+            <li>cafe mocha</li>
+        </ul>
+        <p>Tea</p>
+        <ul>
+            <li>green tea</li>
+            <li>lemon tea</li>
+            <li>ice tea</li>
+        </ul>
+    <table border="2">
+    <tr>
+        
+        <th>company </th>
+        <th>sillset criteria</th>
+            
+    </tr>
+    <tr>
+        <td>Startup</td>
+        <td>full stack+collborative</td>
+    </tr>
+    <tr>
+        <td>Google</td>
+        <td>full stack+devops</td>
+    </tr>
+    <tr>
+        <td>Facebook</td>
+        <td>Fullstack</td>
+    </tr>
+    <tr>
+        <td>Speed</td>
+        <td>Variation+tricks</td>
+    </tr>
+    </table>
+    
+    </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function f1()
+            {
+                    var quant=0;
+                    if(document.getElementById("option1").checked)
+                    {
+                        quant=1;
+                    }
+                    if(document.getElementById("option2").checked)
+                    {
+                        quant=1;
+                    }
+                    if(document.getElementById("option3").checked)
+                    {
+                        quant=1;
+                    }
+                    if(document.getElementById("option4").checked)
+                    {
+                        quant=1;
+                    }
+                    localStorage.setItem("quant",quant); 
+            }
+        </script>
+        <style>
+            .div1{
+                text-align: center;
+                font-size: 200%;
+                color: black;
+                margin-bottom: 150px;
+                color:  black;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+            Question 1
+        </div>
+        <br>
+        <br>
+        <p><b>Given points (x1,y1) and (x2,y2) select the formula to find the equation of the given line :</b></p>
+        <br>
+        <br>
+        <form action="q2.html" method="get">
+            <input type="radio" name="q1" id="option1" value="1">
+            <math>
+               <mrow>
+                 <mi>y</mi>
+                 <mo>=</mo>
+                 <mi>m</mi>
+                 <mi>x</mi>
+                 <mo>+</mo>
+                 <mi>b</mi>
+               </mrow>
+            </math>
+            <br>
+            <br>
+            <input type="radio" name="q1" id="option2" value="2">
+            <math>
+            
+               <msup>
+                  <mi>
+                    (x-h)
+                  </mi>
+                  <mn>
+                      2
+                  </mn>
+                  
+                  
+               </msup>
+               <mo>+</mo>
+               <msup>
+               <mi>(y-k)</mi>
+               <mn>2</mn>
+               </msup>
+               <mo>=</mo>
+               <msup><mi>r</mi><mn>2</mn></msup>
+            </math>
+            <br>
+            <br>
+            <input type="radio" name="q1" id="option3" value="3">
+            <math><mi>(y-y1)</mi><mo>=</mo><mi>m(x-x1)</mi></math>
+            <br>
+            <br>
+            <input type="radio" name="q1" id="option4" value="4">
+            
+            <math>
+            <mi>(y-y2)</mi>
+            <mo>=</mo>
+            <mfrac>
+            <mi>(y2-y1)</mi>
+            <mi>(x2-x1)</mi>
+            </mfrac>
+            <mi>(x-x2)</mi>
+            </math>
+            <br>
+            <br>
+            <input type="submit" value="proceed" onclick="f1()">
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <input type="reset" value="cancel">
+            
+        </form>
+              
+        
+        
+        
+    </body>
+</html>

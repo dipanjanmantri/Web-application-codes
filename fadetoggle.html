@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-1.11.3.js">
+        </script>
+        <script>
+                $(document).ready(function(){
+                    $("button").click(function(){
+                       $("#div1").fadeToggle();
+                       $("#div2").fadeToggle();
+                    });
+                });
+        </script>
+    </head>
+    <body>
+        <div id="div1" style="width: 100px;height: 100px;background-color: red">
+            
+        </div>
+        <br>
+        <br>
+        
+        <div id="div2" style="width: 100px;height: 100px;background-color: blueviolet">
+        </div>
+        <br><br>
+        <button type="button">click to toggle</button>
+    </body>
+</html>

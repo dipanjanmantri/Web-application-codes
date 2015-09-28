@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-1.11.3.js">
+            
+        </script>
+        <script>
+            $(document).ready(function(){
+               $("button").click(function(){
+                   $("#div1").remove(".test");
+               }) ;
+            });
+        </script>
+    </head>
+    <body>
+        <div id="div1" style="background-color: cyan;width: 200px;height: 200px;border: 2px solid"> 
+            This is within the division
+            <p class="test">this is cool</p>
+            <p class="test1">this is awesome</p>
+        </div>
+        <br>
+        <br>
+        <button type="button">click here</button>
+    </body>
+</html>

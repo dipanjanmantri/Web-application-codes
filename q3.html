@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function f1()
+               {
+			var score=0;
+			if(document.getElementById("op1").checked && document.getElementById("op6").checked)
+		        reading_score=1;
+		        localStorage.setItem("score", score);
+	
+	       }
+            function f2()
+		{
+					
+			if(document.getElementById("op1").checked)
+				document.getElementById("blank1").innerHTML = document.getElementById("option1").value;
+			if(document.getElementById("op2").checked)
+			        document.getElementById("blank1").innerHTML = document.getElementById("option2").value;
+		        if(document.getElementById("op3").checked)
+				document.getElementById("blank1").innerHTML = document.getElementById("option3").value;
+			if(document.getElementById("op4").checked)
+				document.getElementById("blank2").innerHTML = document.getElementById("option4").value;
+	                if(document.getElementById("op5").checked)
+				document.getElementById("blank2").innerHTML = document.getElementById("option5").value;
+		        if(document.getElementById("op6").checked)
+				document.getElementById("blank2").innerHTML = document.getElementById("option6").value;
+			}
+        </script>
+    </head>
+    <body>
+        <h2 style="text-align: center;font-style: italic;margin-bottom: 60px">Question 3</h2>
+        <p style="font-size: 120%"><b>As per the latest twitter news complete 
+        the article snippet given by selecting appropriate choices for the blanks :</b></p>
+        <p>Twitter wants more cash. The company announced two "
+         <mark id ="blank1">$_______</mark>" million debt offerings in a filing today, 
+         each with a potential $100 increase provided that the sales are oversubscribed. 
+         Assuming full tip, including the $100 million boosters, "<mark id="blank2">$________</mark>" 
+         will raise up to $1.5 billion with the two offerings.</p>
+        <form action="q4.html" name="question3">
+			
+	 <input type="radio" name="Mark1" id="op1" value="$0" onclick="f2()">Option1 Mark1 : $900 <input type="radio" name="Mark2" id="op4" value="Box" onclick="f2()">Option1 Mark2 : Box</br>
+         <input type="radio" name="Mark1" id="op2" value="$550" onclick="f2()">Option2 Mark1 : $220 <input type="radio" name="Mark2" id="op5" value="Adobe" onclick="f2()">Option2 Mark2 : Adobe</br>
+	 <input type="radio" name="Mark1" id="op3" value="$450" onclick="f2()">Option3 Mark1 : $125 <input type="radio" name="Mark2" id="op6" value="Dropbox" onclick="f2()">Option3 Mark2 : Dropbox</br></br>
+			
+         <input type="submit" value="Proceed"onclick="f1()">
+         
+         <input type="reset" value="Cancel">
+       </form>
+    </body>
+</html>

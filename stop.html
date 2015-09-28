@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-1.11.3.js">
+            
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#div1").click(function(){
+                    $("#div2").slideToggle(6000);
+                });
+                $("#btn1").click(function(){
+                   $("#div2").stop(); 
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="div1" style="padding: 5px;border: 2px solid;background-color: cyan">
+            slide down the panel
+        </div>
+        <div id="div2" style="padding: 50px;background-color: blueviolet;border: 2px solid;display: none">
+            this is the panel that will slide
+        </div>
+        <br>
+        <br>
+        <button type="button" id="btn1">stop</button>
+    </body>
+</html>

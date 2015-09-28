@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-1.11.3.js">
+            
+        </script>
+        <script>
+            $(document).ready(function(){
+               $("#btn1").click(function(){
+                   $("#p1").text(function(a,b){
+                      return "original text :"+b+" index: "+a; 
+                   });
+               }) ;
+               $("#btn2").click(function(){
+                   $("#p2").html(function(a,b){
+                      return "original html :"+b+" index: "+a; 
+                   });
+               }) ;
+               $("#btn3").click(function(){
+                   $("#p3").val(function(a,b){
+                      return "original val :"+b+" index: "+a; 
+                   });
+               }) ;
+            });
+        </script>
+    </head>
+    <body>
+        <p id="p1">1st <b>para</b></p>
+        <p id="p2">2nd <b>para</b></p>
+        Name : <input id="i1" type="text" value="Dipanjan">
+        <br>
+        <br>
+        <button type="button" id="btn1">click for text</button>
+        <button type="button" id="btn2">click for html</button>
+        <button type="button" id="btn3">click for value</button>
+        
+    </body>
+</html>

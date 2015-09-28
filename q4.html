@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<script>
+  function f1()
+        {
+	  var score =0;
+	  if(document.getElementById("op1").checked)
+	  score=1;
+	  localStorage.setItem("score", score);
+	
+	}
+</script>
+	
+	<body>
+		<header><h1><p align="center">Question 4</p></h1></header>
+		</br>
+		</br>
+		<div style="float:left; width:50%;">
+		<h3>Watch the video and answer the question.</br>What is the source as mentioned in the video?</h3></br>
+		
+		
+		
+		<form action="survey.html">
+			<input type="radio" name="q4" id="op1" value="NASA.gov">NASA</br>
+			<input type="radio" name="q4" id="op1" value="DATA.gov">CIA</br>
+			<input type="radio" name="q4" id="op1" value="Facebook">NETFLIX</br>
+			<input type="radio" name="q4" id="op1" value="XYZ.net">YOUTUBE</br>
+                        <br>
+                        <br>
+			<input type="submit" value="Proceed" onclick="f1()">
+			<input type="reset" value="Cancel">
+		</form>
+		</div>
+
+		<div style="float:right; width:50%; ">
+		<div align="left"><embed width="400" height="400" src="https://www.youtube.com/v/ih9jPaZct1w">
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-1.11.3.js">
+            
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".t1").click(function(){
+                   $(".t2").slideDown("slow"); 
+                });
+                $(".t3").click(function(){
+                    $(".t4").slideUp("slow");
+                });
+                $("#btn1").click(function(){
+                    $(".t1").slideToggle("slow");
+                    $(".t3").slideToggle("slow");
+                });
+            });
+        </script>
+        <style>
+            .t1{
+                padding: 10px;
+                border: 2px solid;
+                background-color: gray;
+                text-align: center;
+                
+            }
+            .t2{
+                padding: 100px;
+                border: 2px solid;
+                background-color: grey;
+                display: none;
+                text-align: center;
+            }
+            .t3{
+                padding: 10px;
+                border: 2px solid;
+                background-color: cyan;
+                text-align: center;
+                
+                
+            }
+            .t4{
+                padding: 50px;
+                background-color: brown;
+                border: 4px solid;
+                text-align: center;
+                
+                
+            }
+        </style>
+    </head>
+    <body>
+        <p><b>Slide down</b></p>
+        <div class="t1">
+            Slide down for the panel
+        </div>
+        <div class="t2"> 
+            This is the panel
+        </div>
+        <br>
+        <br>
+        <div class="t3">
+            click this panel to slide up
+        </div>
+        <div class="t4">
+            slide up
+        </div>
+        <br>
+        <br>
+        <button type="button" id="btn1">click here to toggle</button>
+     
+    </body>
+</html>

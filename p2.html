@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script src="jquery-1.11.3.js"></script>
+        <script>
+            $(document).ready(function(){
+               $("p").dblclick(function(){
+                   $(this).hide();
+               }) ;
+               $(".test").mouseenter(function(){
+                  alert("I have entered the pth element of class test");
+                  
+               });
+               $("#test1").mouseleave(function(){
+                  alert("I have left the pth element of id test1"); 
+               });
+               $("p.one").mousedown(function(){
+                  alert("I am in p of class one") ;
+               });
+               
+               $("p.one").hover(function(){
+                  alert("I am on p of class name and the function is hover"); 
+               });
+            });
+        </script>
+    </head>
+    <body>
+        <p class="one">1st element </p>
+        <p class="two">2nd element </p>
+        <p class="test">3rd element </p>
+        <p id="test1">4th element </p>
+    </body>
+</html>
